@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:singletonproj/singleton_class.dart';
+
 class SingletonClass extends StatefulWidget {
   const SingletonClass({super.key});
 
@@ -10,9 +10,13 @@ class SingletonClass extends StatefulWidget {
 class _SingletonClassState extends State<SingletonClass> {
   @override
   Widget build(BuildContext context) {
+
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
-    //Singleton ma ak sa zayada instance create nahi kar sakta chae such bhi ho jae.!
+
+    //Singleton ma ak sa zayada instance create nahi kar sakta chai kuch bhi ho jae.!
+
+
     return Scaffold(
       //definition
       // it is a design pattern that restricts the instantiation of a class to one single object
@@ -23,8 +27,7 @@ class _SingletonClassState extends State<SingletonClass> {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            Icon(Singleton.addIcon),
-            Text(Singleton.myText),
+
           ],
         ),
 

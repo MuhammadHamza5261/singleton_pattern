@@ -7,6 +7,7 @@ class SingletonStaticField{
 
 }
 
+
 /*
 
   void main(){
